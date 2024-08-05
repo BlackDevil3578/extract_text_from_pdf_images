@@ -40,6 +40,10 @@ This project provides an effective solution for extracting text from PDF files w
 
 You can increase the zoom factor up to 32.0 to obtain better resolution images, which will improve OCR accuracy. However, be aware that higher zoom factors will significantly increase the processing time, especially without a GPU.
 
+#### Changing the OCR Language
+
+The script uses Tesseract OCR, which supports multiple languages. You can change the language by setting the `lang` variable in the script. You can see the list of supported languages and download the required language packs from the [Tesseract OCR Language Data](https://github.com/tesseract-ocr/tessdata) repository.
+
 ### Example
 
 ```python
