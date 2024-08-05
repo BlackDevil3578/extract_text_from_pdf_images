@@ -2,7 +2,7 @@
 
 ### Description
 
-This project provides an effective solution for extracting text from PDF files where each page is an image. The script extracts high-resolution images from PDF pages , preprocesses these images to enhance quality, and uses Tesseract OCR to extract text. The extracted text is then saved to a text file.
+This project provides an effective solution for extracting text from PDF files where each page is an image. The script extracts high-resolution images from PDF pages, preprocesses these images to enhance quality, and uses Tesseract OCR to extract text. The extracted text is then saved to a text file.
 
 ### Features
 
@@ -36,9 +36,12 @@ This project provides an effective solution for extracting text from PDF files w
     python script.py
     ```
 
+#### Adjusting the Zoom Factor
+
+You can increase the zoom factor up to 32.0 to obtain better resolution images, which will improve OCR accuracy. However, be aware that higher zoom factors will significantly increase the processing time, especially without a GPU.
+
 ### Example
 
 ```python
 pdf_path = "path/to/your/document.pdf"
 pdf_to_text(pdf_path, zoom_factor=8.0)
-"# extract_text_from_pdf_images" 
